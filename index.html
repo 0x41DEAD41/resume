@@ -6,85 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="maxim, resume, cv, frontend, dev">
     <meta name="description" content="Сайт-резюме Максима Коршунова">
+    <link rel="stylesheet" href="style.css">
     <title>Максим Коршунов</title>
 </head>
 <body>
-    <img src="avatar.jpg" alt="Photo", width="200px">
+    <div class="container">
+        <div class="info">
+            <img src="avatar.jpg" alt="Photo">
+        
+            <div class="info-text">
+                <h1>Максим Коршунов</h1>
+        
+                <p>
+                    Я занимаюсь <strong>frontend-разработкой</strong> и <strong>веб-дизайном</strong>.
+                </p>
+        
+                <p>
+                    Я люблю <em>путешествовать, заниматься спортом и программировать</em>.
+                </p>
 
-    <h1>Максим Коршунов</h1>
-
-    <p>
-        Я занимаюсь <strong>frontend-разработкой</strong> и <strong>веб-дизайном</strong>.
-    </p>
-
-    <p>
-        Lorem ipsum dolor sit amet consectetur <em>adipisicing elit</em>. Eveniet, dolorem!
-    </p>
-
-    <h3>Мои хобби</h3>
-    
-    <ol>
-        <li>Сочиняю музыку</li>
-        <li>Рисую AI-картинки</li>
-        <li>Пишу код</li>
-    </ol>
-    
-    <h3>Опыт работы</h3>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Организация</th>
-                <th>Должность</th>
-                <th>Дата</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Ярмарка Retail</td>
-                <td>Промоутер</td>
-                <td>2018-06 — 2019-02</td>
-            </tr>
-            <tr>
-                <td>Яндекс</td>
-                <td>Курьер</td>
-                <td>2019-04 — 2021-10</td>
-            </tr>
-        </tbody>
-        </thead>
-    </table>
-
-    <h3>Связаться со мной</h3>
-
-    <form>
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+                <h4>Контакты:</h4>
+                
+                <a href="https://t.me/helvetic_galiard" target="_blank">Telegram</a>
+                |
+                <a href="https://github.com/0x41DEAD41" target="_blank">GitHub</a>
+            </div>
         </div>
         
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="email@example.com">
+        <div class="card card-green hobbies">
+            <h3>Мои хобби</h3>
+        
+            <ol class="list">
+                <li>Сочиняю музыку</li>
+                <li>Рисую AI-картинки</li>
+                <li>Пишу код</li>
+            </ol>
         </div>
         
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea 
-                id="message"
-                cols="42"
-                rows="10"
-                placeholder="Введите сообщение...">
-            </textarea>
+        <div class="card card-blue work-xp">
+            <h3>Опыт работы</h3>
+        
+            <table>
+                <thead>
+                    <tr>
+                        <th>Организация</th>
+                        <th>Должность</th>
+                        <th>Дата</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ярмарка Retail</td>
+                        <td>Промоутер</td>
+                        <td>2018-06 — 2019-02</td>
+                    </tr>
+                    <tr>
+                        <td>Яндекс</td>
+                        <td>Курьер</td>
+                        <td>2019-04 — 2021-10</td>
+                    </tr>
+                </tbody>
+                </thead>
+            </table>
         </div>
         
-        <button type="submit">Отправить</button>
-    </form>
-
-    <h3>Контакты:</h3>
-    
-    <a href="https://t.me/helvetic_galiard" target="_blank">Telegram</a>
-    |
-    <a href="https://github.com/0x41DEAD41" target="_blank">GitHub</a>
+        
+        <div class="card card-orange card-message">
+            <h3>Связаться со мной</h3>
+        
+            <form class="message-form">
+                <div class="user-data-input">
+                    <div class="name-input">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+                    
+                    <div class="email-input">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="email@example.com">
+                    </div>
+                </div>
+        
+                <div class="message-data-input">
+                    <label for="message">Ваше сообщение:</label>
+                    <textarea 
+                        id="message"
+                        rows="10"
+                        placeholder="Введите сообщение..."></textarea>
+                </div>
+        
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
